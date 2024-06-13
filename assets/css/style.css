@@ -158,7 +158,7 @@ span {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid var(--main-color);
+  border: 0.2rem solid var (--main-color);
   font-size: 2rem;
   border-radius: 50%;
   color: var(--main-color);
@@ -290,13 +290,10 @@ span {
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
   gap: 2.5rem;
-  justify-content: center; /* Center the grid items horizontally */
 }
 .service-box {
   background-color: var(--main-color);
   height: 300px;
-  width: 100%; /* Ensure the service boxes take full width within the grid */
-  max-width: 600px; /* Set a maximum width to center the boxes within the grid */
   border-radius: 3rem;
   cursor: pointer;
   transition: 0.3s ease;
@@ -360,7 +357,7 @@ span {
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 1rem;
-  background: var (--bg-color);
+  background: var(--bg-color);
   transition: 0.3s ease;
   cursor: pointer;
 }
