@@ -290,6 +290,7 @@ span {
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
   gap: 2.5rem;
+  transform: translateX(-30px);
 }
 .service-box {
   background-color: var(--main-color);
@@ -560,7 +561,7 @@ span {
   padding: 1.5rem;
   font-size: 1.6rem;
   color: var(--text-color);
-  background: var(--bg-color);
+  background: var (--bg-color);
   border-radius: 0.8rem;
   border: 2px solid var(--main-color);
   margin: 1rem 0;
