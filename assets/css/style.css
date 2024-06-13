@@ -788,6 +788,6 @@ footer .copyright {
 
 @media (max-width: 500px) {
   .services-container {
-    transform: translateX(-25px);
+    transform: translateX(-15px);
   }
 }
