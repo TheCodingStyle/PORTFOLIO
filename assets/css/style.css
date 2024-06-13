@@ -158,7 +158,7 @@ span {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid var(--main-color);
+  border: 0.2rem solid var (--main-color);
   font-size: 2rem;
   border-radius: 50%;
   color: var(--main-color);
@@ -261,7 +261,7 @@ span {
 @media (max-width:995px) {
   .home {
     flex-direction: column;
-    margin: 0rem 2rem;;
+    margin: 0rem 2rem;
   }
   .home .home-content h3 {
     font-size: 2.5rem;
@@ -287,7 +287,7 @@ span {
 }
 .services-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
@@ -330,14 +330,6 @@ span {
   }
   .services{
     padding-bottom: 7rem;
-  }
-}
-@media (max-width:895px){
-  .services h2{
-    margin-bottom: 3rem;
-  }
-  .services-container {
-    grid-template-columns: repeat(1,1fr);
   }
 }
 
@@ -385,13 +377,22 @@ span {
   font-weight: 500;
   margin-left: 0.5rem;
 }
+
+/* Responsive changes for screens smaller than 870px */
+@media (max-width: 870px) {
+  .skills .container .row {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
+
 @media screen and (max-width:600px) {
   .skills .container {
     margin: 0;
     padding: 0;
   }
   .skills .container .row {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin: 1rem;
     padding: 2rem 0.2rem 2rem 0.2rem;
     gap: 1rem;
@@ -402,7 +403,7 @@ span {
   }
 }
 
-/* eduction section */
+/* education section */
 
 .education {
   background: var(--second-bg-color);
@@ -537,7 +538,6 @@ span {
   }
 }
 
-
 /* Contact section */
 .contact h2 {
   margin-bottom: 3rem;
@@ -639,49 +639,10 @@ footer .copyright {
     margin: 0 5rem;
   }
 }
-@media(max-width:991px) {
-  .header {
-    padding: 2rem 3%;
-  }
-  section {
-    padding: 5rem 3% 2rem;
-  }
-  .services {
-    padding-bottom: 7rem;
-  }
-  .footer {
-    padding: 2rem 3%
-  }
-}
-@media (max-width:895) {
-  .services h2{
-    margin-bottom: 3rem;
-  }
-  .services-container {
-    grid-template-columns: repeat(1,1fr);
-  }
-}
 
-@media (max-width: 2366px) {
+@media(max-width:1250px) {
   .services-container {
     grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (max-width: 2366px) {
-  .services-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media(max-width:1285px) {
-  html {
-    font-size: 55%;
-  }
-  .services-container {
-    padding-bottom: 7rem;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 0 5rem;
   }
 }
 
@@ -699,12 +660,126 @@ footer .copyright {
     padding: 2rem 3%
   }
 }
-
 @media (max-width:895px) {
   .services h2{
     margin-bottom: 3rem;
   }
   .services-container {
     grid-template-columns: repeat(1,1fr);
+  }
+}
+
+/* Responsive changes for screens smaller than 722px */
+@media (max-width: 722px) {
+  .services-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service-box {
+    padding: 1rem;
+    height: auto;
+  }
+  .service-info {
+    padding: 2rem;
+  }
+  .service-info h4 {
+    font-size: 1.8rem;
+  }
+  .service-info p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive changes for screens smaller than 615px */
+@media (max-width: 615px) {
+  .services-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service-box {
+    padding: 1rem;
+    height: auto;
+  }
+  .service-info {
+    padding: 1.5rem;
+  }
+  .service-info h4 {
+    font-size: 1.6rem;
+  }
+  .service-info p {
+    font-size: 1rem;
+  }
+
+  .skills .container .row {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .skills .container .bar .info span {
+    font-size: 1.6rem;
+  }
+
+  .home .home-content h1 {
+    font-size: 4rem;
+  }
+  .home-content h3 {
+    font-size: 2.5rem;
+  }
+  .home-img img {
+    width: 80vw;
+  }
+
+  .navbar a {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+  }
+  .header {
+    padding: 2rem 5%;
+  }
+  section {
+    padding: 4rem 5% 2rem;
+  }
+}
+
+/* Responsive changes for screens smaller than 540px */
+@media (max-width: 540px) {
+  .service-box {
+    padding: 0.5rem;
+    height: auto;
+  }
+  .service-info {
+    padding: 1rem;
+  }
+  .service-info h4 {
+    font-size: 1.4rem;
+  }
+  .service-info p {
+    font-size: 0.9rem;
+  }
+
+  .skills .container .row {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+  }
+  .skills .container .bar .info span {
+    font-size: 1.2rem;
+  }
+
+  .home .home-content h1 {
+    font-size: 3rem;
+  }
+  .home-content h3 {
+    font-size: 2rem;
+  }
+  .home-img img {
+    width: 70vw;
+  }
+
+  .navbar a {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+  .header {
+    padding: 1rem 3%;
+  }
+  section {
+    padding: 2rem 3% 1rem;
   }
 }
