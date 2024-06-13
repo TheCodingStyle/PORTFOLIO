@@ -466,7 +466,7 @@ span {
   right: 30px;
   border: medium solid var(--main-color);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent var(--main-color);
+  border-color: transparent transparent transparent var (--main-color);
 }
 .education .right::before {
   content: '';
@@ -783,5 +783,11 @@ footer .copyright {
   }
   section {
     padding: 2rem 3% 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .services-container {
+    transform: translateX(-25px);
   }
 }
